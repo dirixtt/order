@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>ESPA</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/lib/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/lib/jquery.mCustomScrollbar/jquery.mCustomScrollbar.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/lib/select2/select2.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/lib/fancybox/jquery.fancybox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/style.css?v=1.0.0a"
+    />
+
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=a100bdc8-0123-487c-a784-3b11a0f1c7b2&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    <div class="header-mob">
+      <div class="container">
+        <div class="header-mob__inner">
+          <div class="header-mob__l">
+            <div class="header__toggle"></div>
+            <a href="#" class="header__logo">
+              <img src="assets/img/svg/logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="header-mob__r">
+            <a href="#" class="header__lk">
+              <img src="assets/img/svg/ic-user.svg" alt="" />
+            </a>
+            <div class="header__search">
+              <div class="header__search-title js-search-tt">
+                <img src="assets/img/svg/ic-hd3.svg" alt="" />
+              </div>
+
+              <div class="header__search-drop">
+                <form>
+                  <div class="header__search-form">
+                    <input type="search" placeholder="Поисковый запрос..." />
+                    <button type="submit" class="header__search-form-btn">
+                      <img src="assets/img/svg/ic-search.svg" alt="" />
+                      <span>Найти</span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__close"></div>
+          <div class="header__arr"></div>
+          <a href="#" class="header__logo">
+            <img src="assets/img/svg/logo.svg" alt="" />
+          </a>
+          <div class="header__menu">
+            <ul>
+              <li class="drop">
+                <a href="#">О компании</a>
+                <span class="ar"></span>
+
+                <ul>
+                  <li><span>О компании</span></li>
+                  <li><a href="#">История ESPA</a></li>
+                  <li><a href="#">ESPA в России</a></li>
+                  <li><a href="#">Напишите нам</a></li>
+                  <li><a href="#">Референс-лист</a></li>
+                  <li><a href="#">ESPA рекомендует</a></li>
+                  <li><a href="#">Политика конфиденциальности</a></li>
+                  <li><a href="#">Пользовательское соглашение</a></li>
+                </ul>
+              </li>
+              <li class="drop">
+                <a href="#">Продукция</a>
+                <span class="ar"></span>
+
+                <ul>
+                  <li><span>Продукция</span></li>
+                  <li><a href="#">Продукция</a></li>
+                </ul>
+              </li>
+              <li class="drop">
+                <a href="#">Обслуживание и ремонт</a>
+                <span class="ar"></span>
+
+                <ul>
+                  <li><span>Обслуживание и ремонт</span></li>
+                  <li><a href="#">Обслуживание и ремонт</a></li>
+                </ul>
+              </li>
+              <li class="drop">
+                <a href="#">Скачать</a>
+                <span class="ar"></span>
+
+                <ul>
+                  <li><span>Скачать</span></li>
+                  <li><a href="#">Скачать</a></li>
+                </ul>
+              </li>
+              <li class="drop">
+                <a href="#">Где купить</a>
+                <span class="ar"></span>
+
+                <ul>
+                  <li><span>Где купить</span></li>
+                  <li><a href="#">Где купить</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header__r">
+            <a href="#" class="bt bt-bord-bl"
+              ><img src="assets/img/svg/ic-set.svg" alt="" /> Подобрать насос</a
+            >
+            <a href="#" class="bt bt-bord-bl mb"
+              ><img src="assets/img/svg/ic-hd1.svg" alt="" /> Напишите нам</a
+            >
+
+            <a href="#" class="header__lk ds">
+              <img src="assets/img/svg/ic-hd1.svg" alt="" />
+            </a>
+            <a href="#" class="header__lk ds">
+              <img src="assets/img/svg/ic-hd2.svg" alt="" />
+            </a>
+            <div class="header__search ds">
+              <div class="header__search-title js-search-tt">
+                <img src="assets/img/svg/ic-hd3.svg" alt="" />
+              </div>
+
+              <div class="header__search-drop">
+                <form>
+                  <div class="header__search-form">
+                    <input type="search" placeholder="Поисковый запрос..." />
+                    <button type="submit" class="header__search-form-btn">
+                      <img src="assets/img/svg/ic-search.svg" alt="" /> Найти
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="header__soc">
+              <ul>
+                <li>
+                  <a href="#" target="_blank"
+                    ><img src="assets/img/layout/ic-soc-bl1.png" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" target="_blank"
+                    ><img src="assets/img/layout/ic-soc-bl2.png" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" target="_blank"
+                    ><img src="assets/img/layout/ic-soc-bl3.png" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#" target="_blank"
+                    ><img src="assets/img/layout/ic-soc-bl4.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="banner-p">
+      <div class="banner-p__bg">
+        <img src="assets/img/layout/banner-i6.jpg" alt="" />
+      </div>
+      <div class="container">
+        <div class="banner-p__inner">
+          <div class="banner-p__title">
+            <h1>Где купить</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bread">
+      <div class="container">
+        <div class="bread__inner">
+          <ul>
+            <li>
+              <a href="#"><img src="assets/img/svg/ic-home.svg" alt="" /></a>
+            </li>
+            <li>Где купить</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-main">
+      <div class="container">
+        <div class="content-main__inner">
+          <div class="map-im">
+            <div class="map-im__top">
+              <a href="#" class="bt bt-second">Стать торговым партнёром Espa</a>
+            </div>
+
+            <div class="map-im__inner">
+              <div class="map">
+                <div class="map__filter">
+                  <div class="map__filter-category">
+                    <div class="map__filter-category-cell">
+                      <div class="map__filter-category-item">
+                        <input
+                          class="filter"
+                          value="water supply and watering"
+                          type="checkbox"
+                          id="filter-category1"
+                        />
+                        <label for="filter-category1">
+                          <span class="map__filter-category-img">
+                            <img src="assets/img/svg/ic-mp1.svg" alt="" />
+                          </span>
+                          <span class="map__filter-category-tx"
+                            >Водоснабжение и полив</span
+                          >
+                        </label>
+                      </div>
+                    </div>
+                    <div class="map__filter-category-cell">
+                      <div class="map__filter-category-item">
+                        <input
+                          class="filter"
+                          value="Sewerage removal"
+                          type="checkbox"
+                          id="filter-category2"
+                        />
+                        <label for="filter-category2">
+                          <span class="map__filter-category-img">
+                            <img src="assets/img/svg/ic-mp2.svg" alt="" />
+                          </span>
+                          <span class="map__filter-category-tx"
+                            >Откачка сточных вод</span
+                          >
+                        </label>
+                      </div>
+                    </div>
+                    <div class="map__filter-category-cell">
+                      <div class="map__filter-category-item">
+                        <input
+                          class="filter"
+                          value="Pool equipment"
+                          type="checkbox"
+                          id="filter-category3"
+                        />
+                        <label for="filter-category3">
+                          <span class="map__filter-category-img">
+                            <img src="assets/img/svg/ic-mp3.svg" alt="" />
+                          </span>
+                          <span class="map__filter-category-tx"
+                            >Оборудование для бассейнов</span
+                          >
+                        </label>
+                      </div>
+                    </div>
+                    <div class="map__filter-category-cell">
+                      <div class="map__filter-category-item">
+                        <input
+                          class="filter"
+                          value="Heating and hot water supply"
+                          type="checkbox"
+                          id="filter-category4"
+                        />
+                        <label for="filter-category4">
+                          <span class="map__filter-category-img">
+                            <img src="assets/img/svg/ic-mp4.svg" alt="" />
+                          </span>
+                          <span class="map__filter-category-tx"
+                            >Отопление и ГВС</span
+                          >
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="map__filter-select">
+                    <div class="map__filter-select-in">
+                      <div class="map__filter-select-cell">
+                        <div class="map__filter-select-item">
+                          <div id="region" class="map__filter-select-title">
+                            Выберите регион
+                          </div>
+                          <div
+                            class="map__filter-select-drop map__filter-select-drop_city"
+                          >
+                            <div class="map__filter-select-drop-in">
+                              <ul id="res_select">
+                                <!-- <li value="Все">Все</li> -->
+                                <!-- <li value="Республика Узбекистан">
+                                  Республика Узбекистан
+                                </li>
+                                <li value="Республика Адыгея">
+                                  Республика Адыгея
+                                </li>
+                                <li value="Республика Алтай">
+                                  Республика Алтай
+                                </li>
+                                <li value="Республика Башкортостан">
+                                  Республика Башкортостан
+                                </li>
+                                <li value="Республика Бурятия">
+                                  Республика Бурятия
+                                </li>
+                                <li value="Республика Дагестан">
+                                  Республика Дагестан
+                                </li>
+                                <li value="Республика Ингушетия">
+                                  Республика Ингушетия
+                                </li>
+                                <li value="Кабардино-Балкарская Республика">
+                                  Кабардино-Балкарская Республика
+                                </li>
+                                <li value="Республика Калмыкия">
+                                  Республика Калмыкия
+                                </li>
+                                <li value="Карачаево-Черкесская Республика">
+                                  Карачаево-Черкесская Республика
+                                </li>
+                                <li value="Республика Карелия">
+                                  Республика Карелия
+                                </li>
+                                <li value="Республика Коми">Республика Коми</li>
+                                <li value="Республика Крым">Республика Крым</li>
+                                <li value="Республика Марий Эл">
+                                  Республика Марий Эл
+                                </li>
+                                <li value="Республика Мордовия">
+                                  Республика Мордовия
+                                </li>
+                                <li value="Республика Саха (Якутия)">
+                                  Республика Саха (Якутия)
+                                </li>
+                                <li value="Республика Северная Осетия - Алания">
+                                  Республика Северная Осетия - Алания
+                                </li>
+                                <li value="Республика Татарстан">
+                                  Республика Татарстан
+                                </li>
+                                <li value="Республика Тыва">Республика Тыва</li>
+                                <li value="Республика Удмуртия">
+                                  Республика Удмуртия
+                                </li>
+                                <li value="Республика Хакасия">
+                                  Республика Хакасия
+                                </li>
+                           -->
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="map__filter-select-cell">
+                        <div class="map__filter-select-item">
+                          <div id="city" class="map__filter-select-title icon">
+                            Выберите город
+                          </div>
+                          <div
+                            class="map__filter-select-drop map__filter-select-drop_city"
+                          >
+                            <div
+                              id="city_select"
+                              class="map__filter-select-drop-in"
+                            >
+                              <ul id="city_list">
+                                <!-- <li value="Все">Все</li> -->
+                                <!-- <li value="Гидросистема">Гидросистема</li>
+                                  <li value="Адыгейск">Адыгейск</li>
+                                  <li value="Майкоп">Майкоп</li>
+                                  <li value="Красногвардейск">Красногвардейск</li>
+                                  <li value="Горно-Алтайск">Горно-Алтайск</li>
+                                  <li value="Барнаул">Барнаул</li>
+                                  <li value="Рубцовск">Рубцовск</li>
+                                  <li value="Ташкент">Ташкент</li>
+                                  <li value="Самарканд">Самарканд</li>
+                                  <li value="Наманган">Наманган</li>
+                                  <li value="Уфа">Уфа</li>
+                                  <li value="Улан-Удэ">Улан-Удэ</li>
+                                  <li value="Махачкала">Махачкала</li>
+                                  <li value="Магас">Магас</li>
+                                  <li value="Нальчик">Нальчик</li>
+                                  <li value="Элиста">Элиста</li>
+                                  <li value="Черкесск">Черкесск</li>
+                                  <li value="Петрозаводск">Петрозаводск</li>
+                                  <li value="Сыктывкар">Сыктывкар</li>
+                                  <li value="Симферополь">Симферополь</li>
+                                  <li value="Йошкар-Ола">Йошкар-Ола</li>
+                                  <li value="Саранск">Саранск</li>
+                                  <li value="Якутск">Якутск</li>
+                                  <li value="Владикавказ">Владикавказ</li>
+                                  <li value="Казань">Казань</li>
+                                  <li value="Кызыл">Кызыл</li>
+                                  <li value="Ижевск">Ижевск</li>
+                                  <li value="Абакан">Абакан</li> -->
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="map__filter-select-cell">
+                        <div class="map__filter-select-item">
+                          <div class="map__filter-select-title">
+                            Параметры партнёра
+                          </div>
+                          <div class="map__filter-select-drop">
+                            <div class="map__filter-select-drop-in">
+                              <!-- Group 1 -->
+                              <div class="map__filter-select-param-cell">
+                                <div class="map__filter-select-param-item">
+                                  <div class="map__filter-select-param-top">
+                                    <div class="map__filter-select-param-check">
+                                      <input
+                                        type="checkbox"
+                                        id="filter-param-all1"
+                                      />
+                                      <label for="filter-param-all1"
+                                        >Выбрать все</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="map__filter-select-param-list">
+                                    <!-- Child Checkboxes for Group 1 -->
+                                    <div class="map__filter-select-param-check">
+                                      <input
+                                        type="checkbox"
+                                        value="retail"
+                                        class="filter"
+                                        name="filter-param1"
+                                        id="filter-param1"
+                                      />
+                                      <label for="filter-param1"
+                                        >Розничная торговля</label
+                                      >
+                                    </div>
+                                    <div class="map__filter-select-param-check">
+                                      <input
+                                        type="checkbox"
+                                        value="wholesale"
+                                        class="filter"
+                                        name="filter-param1"
+                                        id="filter-param2"
+                                      />
+                                      <label for="filter-param2"
+                                        >Оптовая торговля</label
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- Group 2 -->
+                              <div class="map__filter-select-param-cell">
+                                <div class="map__filter-select-param-item">
+                                  <div class="map__filter-select-param-top">
+                                    <div class="map__filter-select-param-check">
+                                      <input
+                                        type="checkbox"
+                                        id="filter-param-all2"
+                                      />
+                                      <label for="filter-param-all2"
+                                        >Выбрать все</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="map__filter-select-param-list">
+                                    <!-- Child Checkboxes for Group 2 -->
+                                    <div class="map__filter-select-param-check">
+                                      <input
+                                        type="checkbox"
+                                        value="offline"
+                                        class="filter"
+                                        name="filter-param2"
+                                        id="filter-param3"
+                                      />
+                                      <label for="filter-param3"
+                                        >Магазин / торговый зал</label
+                                      >
+                                    </div>
+                                    <div class="map__filter-select-param-check">
+                                      <input
+                                        type="checkbox"
+                                        name="filter-param2"
+                                        value="online"
+                                        class="filter"
+                                        id="filter-param4"
+                                      />
+                                      <label for="filter-param4"
+                                        >Торговля через Интернет</label
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- Group 3 -->
+                              <div class="map__filter-select-param-cell">
+                                <div class="map__filter-select-param-item">
+                                  <div class="map__filter-select-param-top">
+                                    <div class="map__filter-select-param-check">
+                                      <input
+                                        type="checkbox"
+                                        id="filter-param-all3"
+                                      />
+                                      <label for="filter-param-all3"
+                                        >Выбрать все</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="map__filter-select-param-list">
+                                    <!-- Child Checkboxes for Group 3 -->
+                                    <div class="map__filter-select-param-check">
+                                      <input
+                                        type="checkbox"
+                                        name="filter-param3"
+                                        value="montaj"
+                                        class="filter"
+                                        id="filter-param5"
+                                      />
+                                      <label for="filter-param5">Монтаж</label>
+                                    </div>
+                                    <div class="map__filter-select-param-check">
+                                      <input
+                                        type="checkbox"
+                                        name="filter-param3"
+                                        value="remont"
+                                        class="filter"
+                                        id="filter-param6"
+                                      />
+                                      <label for="filter-param6"
+                                        >Обслуживание и ремонт</label
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="map__main">
+                  <div class="map__list">
+                    <div class="map__list-in">
+                      <div class="map__list-item" data-partner-id="0">
+                        <div class="map__list-title">ИП Перов Е.А.</div>
+                        <div class="map__list-drop">
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Адрес:</div>
+                            <div class="map__list-tx" partner-id="0">
+                              Архангельск Ленинградский проспект, 2
+                            </div>
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Телефон:</div>
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Телеграм:</div>
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">WhatsApp:</div>
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                          </div>
+
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Сайт:</div>
+                            <a
+                              href="www.leroymerlin.ru"
+                              class="map__list-st"
+                              target="_blank"
+                              >www.leroymerlin.ru</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Электронная почта:</div>
+                            <a
+                              href="mailto:info@ecodoma.ru"
+                              class="map__list-st"
+                              >info@ecodoma.ru</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-rw">
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp1.svg"
+                                  alt=""
+                                  title="Водоснабжение и полив"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp2.svg"
+                                  alt=""
+                                  title="Откачка сточных вод"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp3.svg"
+                                  alt=""
+                                  title="Оборудование для бассейнов"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp4.svg"
+                                  alt=""
+                                  title="Отопление и ГВС"
+                                />
+                              </div>
+                            </div>
+                            <div class="map__list-rw">
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min1.svg"
+                                  alt=""
+                                  title="Розничная торговля"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min2.svg"
+                                  alt=""
+                                  title="Оптовая торговля"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min3.svg"
+                                  alt=""
+                                  title="Магазин / торговый зал"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min4.svg"
+                                  alt=""
+                                  title="Торговля через Интернет"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min5.svg"
+                                  alt=""
+                                  title="Монтаж"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min6.svg"
+                                  alt=""
+                                  title="Обслуживание и ремонт"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="map__list-item" data-partner-id="1">
+                        <div class="map__list-title">
+                          ИП Жиляков Валерий Николаевич
+                        </div>
+                        <div class="map__list-drop">
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Адрес:</div>
+                            <div class="map__list-tx" partner-id="1">
+                              Астрахань <br />ул. Куйбышева, 98
+                            </div>
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Телефон:</div>
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Телеграм:</div>
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">WhatsApp:</div>
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                          </div>
+
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Сайт:</div>
+                            <a
+                              href="www.leroymerlin.ru"
+                              class="map__list-st"
+                              target="_blank"
+                              >www.leroymerlin.ru</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Электронная почта:</div>
+                            <a
+                              href="mailto:info@ecodoma.ru"
+                              class="map__list-st"
+                              >info@ecodoma.ru</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-rw">
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp1.svg"
+                                  alt=""
+                                  title="Водоснабжение и полив"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp2.svg"
+                                  alt=""
+                                  title="Откачка сточных вод"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp3.svg"
+                                  alt=""
+                                  title="Оборудование для бассейнов"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp4.svg"
+                                  alt=""
+                                  title="Отопление и ГВС"
+                                />
+                              </div>
+                            </div>
+                            <div class="map__list-rw">
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min1.svg"
+                                  alt=""
+                                  title="Розничная торговля"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min2.svg"
+                                  alt=""
+                                  title="Оптовая торговля"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min3.svg"
+                                  alt=""
+                                  title="Магазин / торговый зал"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min4.svg"
+                                  alt=""
+                                  title="Торговля через Интернет"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min5.svg"
+                                  alt=""
+                                  title="Монтаж"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min6.svg"
+                                  alt=""
+                                  title="Обслуживание и ремонт"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="map__list-item" data-partner-id="2">
+                        <div class="map__list-title">
+                          ИП Курятников Сергей Алексеевич
+                        </div>
+                        <div class="map__list-drop">
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Адрес:</div>
+                            <div class="map__list-tx" partner-id="2">
+                              Астрахань ул. Рыбинская, д.11
+                            </div>
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Телефон:</div>
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Телеграм:</div>
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">WhatsApp:</div>
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                          </div>
+
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Сайт:</div>
+                            <a
+                              href="www.leroymerlin.ru"
+                              class="map__list-st"
+                              target="_blank"
+                              >www.leroymerlin.ru</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Электронная почта:</div>
+                            <a
+                              href="mailto:info@ecodoma.ru"
+                              class="map__list-st"
+                              >info@ecodoma.ru</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-rw">
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp1.svg"
+                                  alt=""
+                                  title="Водоснабжение и полив"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp2.svg"
+                                  alt=""
+                                  title="Откачка сточных вод"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp3.svg"
+                                  alt=""
+                                  title="Оборудование для бассейнов"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp4.svg"
+                                  alt=""
+                                  title="Отопление и ГВС"
+                                />
+                              </div>
+                            </div>
+                            <div class="map__list-rw">
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min1.svg"
+                                  alt=""
+                                  title="Розничная торговля"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min2.svg"
+                                  alt=""
+                                  title="Оптовая торговля"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min3.svg"
+                                  alt=""
+                                  title="Магазин / торговый зал"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min4.svg"
+                                  alt=""
+                                  title="Торговля через Интернет"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min5.svg"
+                                  alt=""
+                                  title="Монтаж"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min6.svg"
+                                  alt=""
+                                  title="Обслуживание и ремонт"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="map__list-item" data-partner-id="3">
+                        <div class="map__list-title">ООО "Акваметр"</div>
+                        <div class="map__list-drop">
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Адрес:</div>
+                            <div class="map__list-tx" partner-id="3">
+                              Барнаул <br />ул. Власихинская, 49/1
+                            </div>
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Телефон:</div>
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Телеграм:</div>
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">WhatsApp:</div>
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                          </div>
+
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Сайт:</div>
+                            <a
+                              href="www.leroymerlin.ru"
+                              class="map__list-st"
+                              target="_blank"
+                              >www.leroymerlin.ru</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Электронная почта:</div>
+                            <a
+                              href="mailto:info@ecodoma.ru"
+                              class="map__list-st"
+                              >info@ecodoma.ru</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-rw">
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp1.svg"
+                                  alt=""
+                                  title="Водоснабжение и полив"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp2.svg"
+                                  alt=""
+                                  title="Откачка сточных вод"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp3.svg"
+                                  alt=""
+                                  title="Оборудование для бассейнов"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp4.svg"
+                                  alt=""
+                                  title="Отопление и ГВС"
+                                />
+                              </div>
+                            </div>
+                            <div class="map__list-rw">
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min1.svg"
+                                  alt=""
+                                  title="Розничная торговля"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min2.svg"
+                                  alt=""
+                                  title="Оптовая торговля"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min3.svg"
+                                  alt=""
+                                  title="Магазин / торговый зал"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min4.svg"
+                                  alt=""
+                                  title="Торговля через Интернет"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min5.svg"
+                                  alt=""
+                                  title="Монтаж"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min6.svg"
+                                  alt=""
+                                  title="Обслуживание и ремонт"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="map__list-item" data-partner-id="4">
+                        <div class="map__list-title">ИП Бартасова Н.И.</div>
+                        <div class="map__list-drop">
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Адрес:</div>
+                            <div class="map__list-tx" partner-id="4">
+                              Москва <br />ул. Промышленная, 4
+                            </div>
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Телефон:</div>
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Телеграм:</div>
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">WhatsApp:</div>
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                          </div>
+
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Сайт:</div>
+                            <a
+                              href="www.leroymerlin.ru"
+                              class="map__list-st"
+                              target="_blank"
+                              >www.leroymerlin.ru</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Электронная почта:</div>
+                            <a
+                              href="mailto:info@ecodoma.ru"
+                              class="map__list-st"
+                              >info@ecodoma.ru</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-rw">
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp1.svg"
+                                  alt=""
+                                  title="Водоснабжение и полив"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp2.svg"
+                                  alt=""
+                                  title="Откачка сточных вод"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp3.svg"
+                                  alt=""
+                                  title="Оборудование для бассейнов"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp4.svg"
+                                  alt=""
+                                  title="Отопление и ГВС"
+                                />
+                              </div>
+                            </div>
+                            <div class="map__list-rw">
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min1.svg"
+                                  alt=""
+                                  title="Розничная торговля"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min2.svg"
+                                  alt=""
+                                  title="Оптовая торговля"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min3.svg"
+                                  alt=""
+                                  title="Магазин / торговый зал"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min4.svg"
+                                  alt=""
+                                  title="Торговля через Интернет"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min5.svg"
+                                  alt=""
+                                  title="Монтаж"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min6.svg"
+                                  alt=""
+                                  title="Обслуживание и ремонт"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="map__list-item" data-partner-id="5">
+                        <div class="map__list-title">ООО «Аделло Групп»</div>
+                        <div class="map__list-drop">
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Адрес:</div>
+                            <div class="map__list-tx" partner-id="5">
+                              Москва Московская обл. р.п. Нахабино ул. Лагерная
+                              20
+                            </div>
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Телефон:</div>
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Телеграм:</div>
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">WhatsApp:</div>
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                          </div>
+
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Сайт:</div>
+                            <a
+                              href="www.leroymerlin.ru"
+                              class="map__list-st"
+                              target="_blank"
+                              >www.leroymerlin.ru</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Электронная почта:</div>
+                            <a
+                              href="mailto:info@ecodoma.ru"
+                              class="map__list-st"
+                              >info@ecodoma.ru</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-rw">
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp1.svg"
+                                  alt=""
+                                  title="Водоснабжение и полив"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp2.svg"
+                                  alt=""
+                                  title="Откачка сточных вод"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp3.svg"
+                                  alt=""
+                                  title="Оборудование для бассейнов"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp4.svg"
+                                  alt=""
+                                  title="Отопление и ГВС"
+                                />
+                              </div>
+                            </div>
+                            <div class="map__list-rw">
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min1.svg"
+                                  alt=""
+                                  title="Розничная торговля"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min2.svg"
+                                  alt=""
+                                  title="Оптовая торговля"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min3.svg"
+                                  alt=""
+                                  title="Магазин / торговый зал"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min4.svg"
+                                  alt=""
+                                  title="Торговля через Интернет"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min5.svg"
+                                  alt=""
+                                  title="Монтаж"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min6.svg"
+                                  alt=""
+                                  title="Обслуживание и ремонт"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="map__list-item" data-partner-id="6">
+                        <div class="map__list-title">ООО "ВИС-Сервис"</div>
+                        <div class="map__list-drop">
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Адрес:</div>
+                            <div class="map__list-tx" partner-id="6">
+                              Москва ул. Кольская, д. 14, стр. 4
+                            </div>
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Телефон:</div>
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Телеграм:</div>
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">WhatsApp:</div>
+                            <a
+                              href="tel:+7 (473) 255-74-42"
+                              class="map__list-link"
+                              >+7 (473) 255-74-42</a
+                            >
+                          </div>
+
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Сайт:</div>
+                            <a
+                              href="www.leroymerlin.ru"
+                              class="map__list-st"
+                              target="_blank"
+                              >www.leroymerlin.ru</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-tit">Электронная почта:</div>
+                            <a
+                              href="mailto:info@ecodoma.ru"
+                              class="map__list-st"
+                              >info@ecodoma.ru</a
+                            >
+                          </div>
+                          <div class="map__list-row">
+                            <div class="map__list-rw">
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp1.svg"
+                                  alt=""
+                                  title="Водоснабжение и полив"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp2.svg"
+                                  alt=""
+                                  title="Откачка сточных вод"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp3.svg"
+                                  alt=""
+                                  title="Оборудование для бассейнов"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp4.svg"
+                                  alt=""
+                                  title="Отопление и ГВС"
+                                />
+                              </div>
+                            </div>
+                            <div class="map__list-rw">
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min1.svg"
+                                  alt=""
+                                  title="Розничная торговля"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min2.svg"
+                                  alt=""
+                                  title="Оптовая торговля"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min3.svg"
+                                  alt=""
+                                  title="Магазин / торговый зал"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min4.svg"
+                                  alt=""
+                                  title="Торговля через Интернет"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min5.svg"
+                                  alt=""
+                                  title="Монтаж"
+                                />
+                              </div>
+                              <div class="map__list-cl">
+                                <img
+                                  src="assets/img/svg/ic-mp-min6.svg"
+                                  alt=""
+                                  title="Обслуживание и ремонт"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="map__mp">
+                    <div id="map"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-menu">
+        <div class="container">
+          <div class="footer-menu__inner">
+            <div class="footer-menu__cell">
+              <div class="footer-menu__title">О компании</div>
+              <ul>
+                <li><a href="#">История ESPA</a></li>
+                <li><a href="#">ESPA в России</a></li>
+                <li><a href="#">Напишите нам</a></li>
+                <li><a href="#">Референс-лист</a></li>
+                <li><a href="#">ESPA рекомендует</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Пользовательское соглашение</a></li>
+                <li><a href="#">Часто задаваемые вопросы</a></li>
+              </ul>
+            </div>
+            <div class="footer-menu__cell">
+              <div class="footer-menu__title">Продукция</div>
+              <ul>
+                <li><a href="#">Водоснабжение и повышение давления</a></li>
+                <li><a href="#">Откачка сточных вод</a></li>
+                <li><a href="#">Оборудование для бассейнов</a></li>
+                <li><a href="#">Отопление и ГВС</a></li>
+                <li><a href="#">Автоматика для насосов</a></li>
+                <li><a href="#">Система подбора насосного оборудования</a></li>
+              </ul>
+            </div>
+            <div class="footer-menu__cell">
+              <div class="footer-menu__title">Документация</div>
+              <ul>
+                <li><a href="#">Каталоги</a></li>
+                <li><a href="#">Брошюры и буклеты</a></li>
+                <li><a href="#">Инструкции по эксплуатации</a></li>
+                <li><a href="#">3D-модели</a></li>
+                <li><a href="#">Сертификаты</a></li>
+                <li><a href="#">Логотипы</a></li>
+              </ul>
+            </div>
+            <div class="footer-menu__cell">
+              <div class="footer-menu__title">Где купить</div>
+              <ul>
+                <li><a href="#">Оптовая торговля</a></li>
+                <li><a href="#">Магазины / торговые залы</a></li>
+                <li><a href="#">Интернет-магазины</a></li>
+                <li><a href="#">Монтажные организации</a></li>
+              </ul>
+            </div>
+            <div class="footer-menu__cell">
+              <div class="footer-menu__title">Сервис</div>
+              <ul>
+                <li><a href="#">Обслуживание и ремонт</a></li>
+                <li><a href="#">Гарантийные обязательства</a></li>
+                <li><a href="#">Адреса сервисных центров</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-bottom__inner">
+            <div class="footer-bottom__top">
+              <a href="#" class="footer__logo">
+                <img src="assets/img/svg/logo.svg" alt="" />
+              </a>
+
+              <div class="footer-bottom__r">
+                <div class="footer-bottom__btn">
+                  <a href="#" class="bt bt-bord-wh"
+                    ><img src="assets/img/svg/ic-set.svg" alt="" /> Подобрать
+                    насос</a
+                  >
+                  <a href="#" class="bt bt-bord-wh"
+                    ><img src="assets/img/svg/ic-chat.svg" alt="" /> Напишите
+                    нам</a
+                  >
+                </div>
+                <div class="footer-bottom__soc">
+                  <ul>
+                    <li>
+                      <a href="#" target="_blank"
+                        ><img src="assets/img/layout/ic-soc1.png" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"
+                        ><img src="assets/img/layout/ic-soc2.png" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"
+                        ><img src="assets/img/layout/ic-soc3.png" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"
+                        ><img src="assets/img/layout/ic-soc4.png" alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-bottom__all">
+              <div class="footer-bottom__info">
+                <p>
+                  ©ООО «ЭСПА РУС ЭДР» 2009–2023 член Ассоциации участников рынка
+                  автополива и ландшафтного дизайна «РОСА»
+                </p>
+                <a href="#" class="footer-bottom__mail"
+                  ><img src="assets/img/svg/ic-mail.svg" alt="" />
+                  info@espa.ru</a
+                >
+              </div>
+              <div class="footer-bottom__tbl">
+                <div class="footer-bottom__tbl-cell">
+                  <div class="footer-bottom__tbl-title">Центральный офис:</div>
+                  <div class="footer-bottom__tbl-item">
+                    <img src="assets/img/svg/ic-mp.svg" alt="" /> Россия,
+                    115477, г. Москва, ул. Кантемировская, д. 58.
+                  </div>
+                  <div class="footer-bottom__tbl-item">
+                    <img src="assets/img/svg/ic-tel.svg" alt="" /> Телефон: +7
+                    (495) 730-43-06; +7 (495) 730-43-07
+                  </div>
+                </div>
+                <div class="footer-bottom__tbl-cell">
+                  <div class="footer-bottom__tbl-title">
+                    Офис главного склада:
+                  </div>
+                  <div class="footer-bottom__tbl-item">
+                    <img src="assets/img/svg/ic-mp.svg" alt="" /> Россия,
+                    115477, г. Москва, ул. Промышленная, д. 4, стр. 1.
+                  </div>
+                  <div class="footer-bottom__tbl-item">
+                    <img src="assets/img/svg/ic-tel.svg" alt="" /> Телефон: +7
+                    (985) 990-29-81
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="dialogs">
+      <div class="close-bg"></div>
+      <div class="flex">
+        <div class="popup" id="popup_model" data-remodal-id="popup_model">
+          <div class="popup__close close"></div>
+
+          <div class="popup__content">
+            <div class="popup__title">Выбор модели</div>
+
+            <form>
+              <div class="select">
+                <select class="js-select2">
+                  <option value="0">Серия насосов</option>
+                  <option value="1">Серия насосов1</option>
+                </select>
+              </div>
+              <div class="select">
+                <select class="js-select2">
+                  <option value="0">Модельный ряд</option>
+                  <option value="1">Модельный ряд1</option>
+                </select>
+              </div>
+              <div class="select">
+                <select class="js-select2">
+                  <option value="0">Модель насоса</option>
+                  <option value="1">Модель насоса1</option>
+                </select>
+              </div>
+            </form>
+
+            <div class="popup__btn">
+              <a href="#" class="bt bt-second bt-big">Перейти к модели</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- libs -->
+    <script src="assets/lib/jquery-3.5.1.min.js"></script>
+    <script defer src="assets/lib/swiper/swiper-bundle.min.js"></script>
+    <script
+      defer
+      src="assets/lib/jquery.mCustomScrollbar/jquery.mCustomScrollbar.js"
+    ></script>
+    <script defer src="assets/lib/select2/select2.min.js"></script>
+    <script defer src="assets/lib/fancybox/jquery.fancybox.min.js"></script>
+    <script defer src="assets/lib/svgxuse.min.js"></script>
+    <!-- project's js -->
+    <script defer src="assets/js/main.js?v=1.0.0a"></script>
+    <script defer src="assets/js/YMap.js"></script>
+    <script defer src="assets/js/form.js?v=1.0.0a"></script>
+  </body>
+</html>

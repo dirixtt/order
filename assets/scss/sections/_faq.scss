@@ -1,0 +1,17 @@
+.faq {
+	padding: 40px;
+
+	box-sizing: border-box;
+
+	@media (max-width: $w_mob_tab) {
+		padding: 0;
+	}
+
+	&__inner {
+
+	}
+
+	&__accordion {
+
+	}
+}

@@ -1,0 +1,279 @@
+.search {
+	padding: 40px 0;
+
+	box-sizing: border-box;
+
+	@media (max-width: $w_mob_tab) {
+		padding: 16px 0 30px;
+	}
+
+	&__inner {
+
+	}
+
+	&__top {
+		max-width: 932px;
+		padding: 0 20px;
+		box-sizing: border-box;
+		margin: auto;
+	}
+
+	&__categor {
+		&-item {
+			margin-bottom: 5px;
+			display: inline-block;
+			vertical-align: middle;
+
+			font-size: 15px;
+			font-weight: 600;
+
+			@media (max-width: $w_mob_tab) {
+				font-size: 14px;
+			}
+
+			&:after {
+				content: '';
+				width: 4px;
+				height: 4px;
+				display: inline-block;
+				vertical-align: middle;
+				margin: 0 16px;
+
+				background: var(--c-black-brand);
+				border-radius: 10px;
+				opacity: 0.2;
+
+				@media (max-width: $w_mob_tab) {
+					margin: 0 10px;
+				}
+			}
+
+			&.active {
+				color: var(--c-red-brand);
+			}
+		}
+	}
+
+	&__inp {
+		margin-top: 10px;
+		display: flex;
+		align-items: center;
+
+		input {
+			width: 100%;
+			height: 49px;
+			padding: 9px 16px 9px 20px;
+
+			font-size: 15px;
+			box-sizing: border-box;
+			border: 1px solid var(--c-black-brand);
+
+			box-sizing: border-box;
+			font-family: $font;
+
+			&::-webkit-search-cancel-button{
+				position: relative;
+				right: 0;
+
+				-webkit-appearance: none;
+				height: 17px;
+				width: 17px;
+				background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAuNzA5MjI5IDE3TDE2LjcwOTIgMSIgc3Ryb2tlPSIjMzAzMDMwIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPHBhdGggZD0iTTE2LjcwOTIgMTdMMC43MDkyMjkgMSIgc3Ryb2tlPSIjMzAzMDMwIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cg==");
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+
+			&:focus {
+				outline: none!important;
+			}
+		}
+
+		&-btn {
+			height: 49px;
+			width: 138px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 9px 22px;
+
+			font-family: $font;
+			font-size: 18px;
+			color: var(--c-white);
+			border: none;
+			box-sizing: border-box;
+			background: var(--c-red-brand);
+			cursor: pointer;
+			transition: 0.3s;
+			flex-shrink: 0;
+			text-align: center;
+
+			&:hover {
+				opacity: 0.85;
+			}
+
+			@media (max-width: $w_mob_tab) {
+				width: 84px;
+
+				font-size: 14px;
+			}
+		}
+	}
+
+	&__list {
+		margin-top: 45px;
+
+		@media (max-width: $w_mob_tab) {
+			margin-top: 20px;
+		}
+
+		&-item {
+			padding: 40px;
+			display: flex;
+			align-items: center;
+
+			position: relative;
+
+			box-sizing: border-box;
+			border-top: 1px solid var(--bord2);
+
+			@media (max-width: $w_mob_tab) {
+				padding: 16px 20px;
+			}
+
+			a {
+				width: 100%;
+				height: 100%;
+				display: block;
+
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 4;
+			}
+
+			&:hover {
+				.search__list-title {
+					color: var(--c-red-brand);
+				}
+			}
+		}
+
+		&-img {
+			width: 200px;
+			flex-shrink: 0;
+
+			img {
+				max-width: 100%;
+			}
+
+			@media (max-width: $w_mob_tab) {
+				width: 90px;
+			}
+		}
+
+		&-al {
+			width: 100%;
+			padding-left: 40px;
+
+			box-sizing: border-box;
+
+			@media (max-width: $w_mob_tab) {
+				padding-left: 15px;
+			}
+		}
+
+		&-title {
+			font-size: 24px;
+			font-weight: 600;
+			transition: 0.3s;
+
+			@media (max-width: $w_mob_tab) {
+				font-size: 16px;
+			}
+		}
+
+		&-tx {
+			font-size: 18px;
+			opacity: 0.7;
+
+			@media (max-width: $w_mob_tab) {
+				font-size: 14px;
+			}
+		}
+	}
+
+	&__bottom {
+		padding: 45px 40px 0;
+
+		border-top: 1px solid var(--bord2);
+
+		.btt {
+			margin-top: 0;
+		}
+
+		@media (max-width: $w_mob_tab) {
+			padding: 30px 20px 0;
+		}
+	}
+
+	&__sort {
+		margin-top: 40px;
+		display: flex;
+		align-items: center;
+
+		@media (max-width: $w_mob_tab) {
+			margin-top: 20px;
+			display: block;
+		}
+
+		&-al {
+			opacity: 0.2;
+			color: var(--c-black-brand);
+
+			@media (max-width: $w_mob_tab) {
+				text-align: center;
+				font-size: 14px;
+			}
+		}
+
+		&-item {
+			display: inline-block;
+			color: var(--c-black-brand);
+
+			@media (max-width: $w_mob_tab) {
+				display: block;
+
+				text-align: center;
+				font-size: 14px;
+			}
+
+			&:hover {
+				color: var(--c-red-brand);
+			}
+
+			&:before {
+				content: '';
+				width: 4px;
+				height: 4px;
+				display: inline-block;
+				vertical-align: middle;
+				margin: 0 16px;
+
+				background: var(--c-black-brand);
+				border-radius: 10px;
+				opacity: 0.2;
+
+				@media (max-width: $w_mob_tab) {
+					display: block;
+					margin: 5px auto;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+

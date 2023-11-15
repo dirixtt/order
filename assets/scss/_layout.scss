@@ -1,0 +1,138 @@
+.overflow {
+	overflow: hidden;
+}
+.hide, .hidden {
+	display: none !important;
+}
+.container {
+	max-width: 1400px;
+	min-width: 320px;
+	margin: 0 auto;
+    position: relative;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+section, .section, article, header, footer {
+	width: 100%;
+	clear: both;
+	position: relative;
+	z-index: 2;
+}
+section, .section, article {
+	margin-top: 80px;
+
+	@media (max-width: $w_mob) {
+		margin-top: 40px;
+	}
+}
+.content, .wrap {
+	width: 100%;
+	max-width: var(--w-content); 
+	margin: 0 auto;
+	padding: 0 var(--doc-padding); 
+	position: relative; 
+	z-index: 2;
+	box-sizing: border-box;
+}
+
+.flex {
+	display: flex;
+	flex-flow: row wrap;
+
+	&.row {
+		flex-flow: row wrap;
+
+		& > * {
+			margin-top: 0;
+			flex: 1 1 auto;
+		}
+	}
+	&.col {
+		flex-flow: column wrap;
+
+		& > * {
+			margin-top: 0;
+			flex: 1 1 auto;
+		}
+	}
+}
+
+.img {
+	display: flex;
+	overflow: hidden;
+	position: relative;
+	background: var(--c-placeholder);
+
+	img {
+		display: block;
+		margin: auto;
+		max-width: 100%;
+		max-height: 100%;
+		object-fit: contain;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+	}
+}
+
+.bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: var(--c-placeholder);
+	overflow: hidden;
+
+	img, video, iframe {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: relative;
+		z-index: 1;
+	}
+}
+
+
+// disable element on some resolutions by class
+.mob-only {
+	@media (min-width: calc( #{$w_mob} + 1px) ) {
+		display: none !important;
+	}
+}
+.tab-only {
+	@media (max-width: $w_mob ) {
+		display: none !important;
+	}
+	@media (min-width: calc( #{$w_tab} + 1px) ) {
+		display: none !important;
+	}
+}
+.mob-and-tab-only {
+	@media (min-width: calc( #{$w_tab} + 1px) ) {
+		display: none !important;
+	}
+}
+.tab-and-desktop-only {
+	@media (max-width: $w_mob ) {
+		display: none !important;
+	}
+}
+.desktop-only {
+	@media (max-width: $w_tab ) {
+		display: none !important;
+	}
+}
+.before-uhd-only {
+	@media (min-width: 1921px ) {
+		display: none !important;
+	}
+}
+.uhd-only {
+	@media (max-width: 1920px ) {
+		display: none !important;
+	}
+}

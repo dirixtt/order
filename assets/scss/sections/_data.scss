@@ -1,0 +1,141 @@
+.data {
+  padding: 40px;
+
+  @media (max-width: $w_mob_tab) {
+    padding: 20px;
+  }
+
+  p {
+    font-size: 19px;
+    font-weight: 300;
+
+    @media (max-width: $w_mob_tab) {
+      font-size: 16px;
+    }
+  }
+
+  &__item {
+    background: var(--c-bg-main);
+    padding: 40px;
+
+    & + .data__item {
+      margin-top: 40px;
+
+      @media (max-width: $w_mob_tab) {
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: $w_mob_tab) {
+      padding: 20px;
+    }
+
+    &-title {
+      margin-bottom: 23px;
+
+      font-size: 24px;
+      font-weight: 600;
+
+      @media (max-width: $w_mob_tab) {
+        font-size: 16px;
+      }
+
+      span {
+        color: var(--gray7);
+      }
+    }
+  }
+
+  &__bt {
+    margin-top: 40px;
+
+    text-align: center;
+
+    @media (max-width: $w_mob_tab) {
+      margin-top: 20px;
+    }
+  }
+
+  &__btns {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .bt {
+      cursor: pointer;
+    }
+
+    &-l {
+      .bt {
+        cursor: pointer;
+        padding: 0!important;
+
+        input {
+          &[type="checkbox"] {
+            display: none;
+
+            & + label {
+              padding: 15px 25px!important;
+              cursor: pointer;
+
+              @media (max-width: $w_mob_tab) {
+                padding: 7px 15px!important;
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: $w_mob_tab) {
+      margin-top: 20px;
+      display: block;
+
+      &-l {
+        margin-bottom: 10px;
+      }
+    }
+
+    .bt-bord-bl {
+      padding: 15px 25px;
+
+      border-radius: 0;
+      font-size: 18px;
+
+      @media (max-width: $w_mob_tab) {
+        padding: 7px 15px;
+
+        font-size: 13px;
+      }
+    }
+
+    .bt {
+      @media (max-width: $w_mob_tab) {
+        margin-bottom: 10px;
+      }
+
+      & + .bt {
+        margin-left: 20px;
+
+        @media (max-width: $w_mob_tab) {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+
+  &__ch {
+    .accordion__check {
+      & + .accordion__check {
+        margin-top: 12px;
+      }
+    }
+  }
+
+  &__acc {
+    transition: 0.3s;
+  }
+
+}
